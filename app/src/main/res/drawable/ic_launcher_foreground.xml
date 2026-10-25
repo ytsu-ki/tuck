@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Tuck icon, "starred note": a white note card, slightly tilted, with a rose star and two
+    text lines, on a soft blush background. All shapes sit inside the 66dp adaptive-icon safe
+    zone, so circle, squircle and rounded-square masks all keep the whole card.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Flat offset shadow (no blur), so the card lifts off the background. -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="-8"
+        android:translateX="2.5"
+        android:translateY="3.5">
+        <path
+            android:fillColor="#FFF6C6D0"
+            android:pathData="M43,31 h22 a8,8 0 0 1 8,8 v30 a8,8 0 0 1 -8,8 h-22 a8,8 0 0 1 -8,-8 v-30 a8,8 0 0 1 8,-8 z" />
+    </group>
+
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="-8">
+        <!-- Card -->
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:pathData="M43,31 h22 a8,8 0 0 1 8,8 v30 a8,8 0 0 1 -8,8 h-22 a8,8 0 0 1 -8,-8 v-30 a8,8 0 0 1 8,-8 z" />
+        <!-- Star; the matching round-joined stroke softens its points. -->
+        <path
+            android:fillColor="#FFE0335F"
+            android:pathData="M47.50,37.00 L49.44,41.33 L54.16,41.84 L50.64,45.02 L51.61,49.66 L47.50,47.30 L43.39,49.66 L44.36,45.02 L40.84,41.84 L45.56,41.33 Z"
+            android:strokeColor="#FFE0335F"
+            android:strokeLineJoin="round"
+            android:strokeWidth="2.4" />
+        <!-- Two lines of "text" -->
+        <path
+            android:pathData="M43,58 H65 M43,65 H57"
+            android:strokeColor="#FFF4C3CD"
+            android:strokeLineCap="round"
+            android:strokeWidth="3.2" />
+    </group>
+</vector>

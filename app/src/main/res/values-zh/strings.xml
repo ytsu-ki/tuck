@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="listener_service_label">Tuck 通知读取</string>
+
+    <!-- 标签页 -->
+    <string name="tab_inbox">收件箱</string>
+    <string name="tab_memos">备忘</string>
+    <string name="tab_rules">规则</string>
+    <string name="tab_settings">设置</string>
+
+    <!-- 通用操作 -->
+    <string name="action_fix">去设置</string>
+    <string name="action_clear">清空</string>
+    <string name="action_reconnect">重新连接</string>
+    <string name="action_try_again">重试</string>
+    <string name="action_open_notification_access">打开通知使用权</string>
+
+    <!-- 引导 -->
+    <string name="onboarding_title">欢迎使用 Tuck</string>
+    <string name="onboarding_subtitle">挑出真正重要的消息。Tuck 把它们收进一个清静的收件箱，并确保你不会错过。</string>
+    <string name="onboarding_promise_untouched">其他应用的通知照常显示。Tuck 只读取一份副本，除非你要求，否则不会拦截或隐藏任何通知。</string>
+    <string name="onboarding_promise_local">所有数据只保存在本机，Tuck 没有联网权限。</string>
+    <string name="onboarding_setup">设置</string>
+    <string name="onboarding_start">开始使用</string>
+    <string name="onboarding_skip">暂时跳过</string>
+
+    <!-- 权限 -->
+    <string name="perm_required">必需</string>
+    <string name="perm_grant">允许</string>
+    <string name="perm_granted">已允许</string>
+    <string name="perm_access_title">通知使用权</string>
+    <string name="perm_access_desc">允许 Tuck 读取收到的通知，以便按你的规则挑出重要消息。</string>
+    <string name="perm_access_restricted_hint">开关是灰色的？打开“应用信息”，点右上角 ⋮，选择“允许受限制的设置”，然后重试。</string>
+    <string name="perm_open_app_info">打开应用信息</string>
+    <string name="perm_post_title">Tuck 提醒</string>
+    <string name="perm_post_desc">星标消息到达时，用于发出额外的声音、振动或横幅提醒。</string>
+    <string name="perm_battery_title">后台运行</string>
+    <string name="perm_battery_desc">防止省电策略关闭 Tuck，避免漏掉星标消息。</string>
+
+    <!-- 收件箱 -->
+    <string name="inbox_empty_title">还没有星标消息</string>
+    <string name="inbox_empty_body">在“规则”页添加规则，符合条件的消息会汇总到这里。</string>
+    <string name="inbox_access_missing">Tuck 还无法读取通知。</string>
+    <string name="inbox_reader_stopped">Tuck 的通知读取没有运行，新消息不会被收集。</string>
+
+    <!-- 备忘 -->
+
+    <!-- 规则 -->
+    <string name="rules_empty_title">还没有规则</string>
+    <string name="rules_empty_body">点“新建规则”，为某个微信联系人、X 账号或关键词的消息加星标。</string>
+
+    <!-- 设置 -->
+    <string name="settings_section_permissions">权限</string>
+    <string name="settings_section_listener">通知读取</string>
+    <string name="listener_connected">已连接，正在读取通知</string>
+    <string name="listener_waiting">已授权，等待系统连接</string>
+    <string name="listener_no_access">未连接：通知使用权未开启</string>
+    <string name="listener_reconnecting">正在重新连接…最多需要 15 秒。</string>
+    <string name="listener_reconnected">通知读取已重新连接</string>
+    <string name="listener_last_error">最近一条无法读取而跳过的通知（%1$s）：%2$s</string>
+    <string name="listener_reconnect_failed_title">系统没有重新启动通知读取</string>
+    <string name="listener_reconnect_failed_body">打开“通知使用权”，把 Tuck 关闭后再重新打开，系统就会重新启动通知读取。</string>
+    <string name="listener_reconnect_failed_background">如果经常断开，可能是手机在后台关闭了 Tuck。请查看上方的“后台运行”。</string>
+    <string name="settings_recent_hint">Tuck 能从通知中读到的内容。仅保存在内存中，应用重启后清空。</string>
+    <string name="settings_recent_empty">暂无内容，新通知会显示在这里。</string>
+    <string name="action_save">保存</string>
+    <string name="action_delete">删除</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_back">返回</string>
+    <string name="action_add">添加</string>
+    <string name="action_remove">移除</string>
+    <string name="list_separator">、</string>
+
+    <!-- 规则编辑 -->
+    <string name="rule_new">新建规则</string>
+    <string name="rule_default_name">星标</string>
+    <string name="rule_name_label">名称</string>
+    <string name="rule_apps_label">来源应用</string>
+    <string name="rule_senders_label">发送者、群或账号</string>
+    <string name="rule_senders_placeholder">输入名称后按回车</string>
+    <string name="rule_senders_hint">发送者、群名或账号名包含其中任意一项即匹配。留空表示任何人。</string>
+    <string name="rule_keywords_label">关键词</string>
+    <string name="rule_keywords_placeholder">输入关键词后按回车</string>
+    <string name="rule_keywords_hint">通知中任意位置出现其中任一关键词即匹配。留空表示任意内容。</string>
+    <string name="rule_tag_label">标签（可选）</string>
+    <string name="rule_tag_placeholder">例如：工作</string>
+    <string name="rule_needs_condition">请至少添加一个应用、发送者或关键词。</string>
+    <string name="rule_preview_title">预览</string>
+    <string name="rule_preview_no_recent">暂无读取记录。新通知到达时会按此规则检查。</string>
+    <plurals name="rule_preview_summary">
+        <item quantity="other">最近 %2$d 条通知中有 %1$d 条匹配。</item>
+    </plurals>
+    <string name="rule_delete_title">删除此规则？</string>
+    <string name="rule_delete_body">已加星标的消息仍会保留在收件箱中。</string>
+
+    <!-- 应用选择 -->
+    <string name="app_picker_title">选择应用</string>
+    <string name="app_picker_search">搜索应用</string>
+    <string name="app_picker_messaging">聊天与社交</string>
+    <string name="app_picker_other">其他应用</string>
+    <!-- 提醒 -->
+    <string name="alert_sound">声音</string>
+    <string name="alert_vibrate">振动</string>
+    <string name="alert_banner">横幅</string>
+    <string name="alert_banner_desc">在屏幕顶部弹出</string>
+    <string name="alert_silent_desc">静默：匹配的消息只收进收件箱，不额外提醒。</string>
+    <string name="alert_choose_sound">选择提示音</string>
+    <string name="alert_default_sound">默认通知提示音</string>
+    <string name="alert_send_test">发送测试提醒</string>
+    <string name="alert_test_sender">Tuck 测试</string>
+    <string name="alert_test_text">星标消息到达时，就会这样提醒你。</string>
+    <string name="alert_action_handled">标为已处理</string>
+    <string name="alert_action_open_in">打开%1$s</string>
+    <string name="alert_channel_name">星标提醒：%1$s</string>
+    <string name="alert_channel_description">符合规则的消息的额外提醒。</string>
+    <string name="rule_alert_label">提醒方式</string>
+    <string name="rule_alert_use_default">使用默认提醒</string>
+    <string name="rule_alert_use_default_desc">默认提醒可在“设置”中修改</string>
+    <string name="settings_section_alert">默认提醒</string>
+    <string name="settings_alert_hint">未单独设置提醒的规则都使用此设置。原应用的通知不受影响。</string>
+
+    <!-- 收件箱 -->
+    <string name="inbox_mark_all_read">全部标为已读</string>
+    <string name="inbox_view_active">待处理</string>
+    <string name="inbox_view_all">全部</string>
+    <string name="inbox_mark_handled">标为已处理</string>
+    <string name="inbox_mark_unhandled">标为未处理</string>
+    <string name="inbox_filtered_empty_title">都处理完了</string>
+    <string name="inbox_filtered_empty_body">没有符合筛选条件的消息。选择“全部”可查看已处理的消息。</string>
+    <string name="day_today">今天</string>
+    <string name="day_yesterday">昨天</string>
+    <string name="message_open_in">在%1$s中打开</string>
+    <string name="message_open_failed">无法打开该应用。</string>
+    <string name="message_copy">复制</string>
+    <string name="message_copied">已复制</string>
+    <string name="message_delete_title">删除这条消息？</string>
+    <string name="message_delete_body">只会从 Tuck 中删除，原应用里的消息不受影响。</string>
+
+    <!-- 备忘 -->
+    <string name="memo_quick_hint">记下一个想法…</string>
+    <string name="memo_quick_todo_hint">添加待办…</string>
+    <string name="memo_pinned">已置顶</string>
+    <string name="memo_pin">置顶</string>
+    <string name="memo_unpin">取消置顶</string>
+    <string name="memo_title_hint">标题</string>
+    <string name="memo_body_hint">写下你的灵感…</string>
+    <string name="memo_tags_label">标签</string>
+    <string name="memo_delete_title">删除这条备忘？</string>
+    <string name="memo_from_message">来自 %1$s 的消息</string>
+    <string name="memo_quote_format">「%1$s」\n—— %2$s（%3$s）\n\n</string>
+    <!-- 第 6 阶段：勿扰时段、保留期限、后台保活、关于 -->
+    <string name="action_ok">确定</string>
+    <string name="settings_section_quiet">勿扰时段</string>
+    <string name="quiet_enabled">勿扰时段</string>
+    <string name="quiet_desc">在此时段内 Tuck 不发出提醒，消息照常收集。</string>
+    <string name="quiet_start">开始</string>
+    <string name="quiet_end">结束</string>
+    <string name="quiet_bypass_hint">开启了“勿扰时段也提醒”的规则仍会提醒。</string>
+    <string name="rule_bypass_quiet">勿扰时段也提醒</string>
+    <string name="rule_bypass_quiet_desc">适用于等不到天亮的消息</string>
+
+    <string name="settings_section_retention">收件箱消息保留</string>
+    <plurals name="retention_days">
+        <item quantity="other">%d 天</item>
+    </plurals>
+    <string name="retention_one_year">1 年</string>
+    <string name="retention_forever">永久</string>
+    <string name="retention_hint">更早的消息会被自动删除。备忘始终保留，重要内容请存为备忘。</string>
+    <string name="retention_hint_forever">消息不会被自动删除。</string>
+
+    <string name="oem_title">在%1$s上保持 Tuck 运行</string>
+    <string name="oem_lock_recents">另外，请在最近任务界面锁定 Tuck，避免一键清理时被关闭。不同系统版本的菜单名称可能略有不同。</string>
+    <string name="oem_open_settings">打开相关设置</string>
+    <string name="oem_name_xiaomi">小米 / Redmi</string>
+    <string name="oem_name_huawei">华为</string>
+    <string name="oem_name_honor">荣耀</string>
+    <string name="oem_name_oppo">OPPO / realme</string>
+    <string name="oem_name_oneplus">一加</string>
+    <string name="oem_name_vivo">vivo / iQOO</string>
+    <string name="oem_name_samsung">三星</string>
+    <string name="oem_name_meizu">魅族</string>
+    <string name="oem_name_other">你的手机</string>
+    <string name="oem_steps_xiaomi">1. 手机管家 → 应用管理/权限 → 自启动管理：开启 Tuck。\n2. 设置 → 应用设置 → Tuck → 省电策略：无限制。</string>
+    <string name="oem_steps_huawei">设置 → 电池 → 应用启动管理 → Tuck：改为手动管理，并开启允许自启动、允许关联启动、允许后台活动。</string>
+    <string name="oem_steps_oppo">设置 → 电池 → 应用耗电管理 → Tuck：开启允许后台行为和允许自动启动。</string>
+    <string name="oem_steps_vivo">1. i 管家 → 应用管理 → 自启动：开启 Tuck。\n2. 设置 → 电池 → 后台耗电管理 → Tuck：允许后台高耗电。</string>
+    <string name="oem_steps_samsung">设置 → 电池 → 后台使用限制 → 永不休眠的应用：添加 Tuck。</string>
+    <string name="oem_steps_meizu">手机管家 → 权限管理 → 后台管理 → Tuck：允许后台运行。</string>
+    <string name="oem_steps_other">如果星标消息不再出现，请在手机的电池设置中找到 Tuck，允许它在后台运行。</string>
+
+    <string name="settings_section_about">关于</string>
+    <string name="about_version">Tuck %1$s</string>
+    <string name="about_privacy">Tuck 没有联网权限，读取的内容只保存在本机，并且不会进入云备份。除非你在规则中开启“收起原通知”，否则它不会拦截或隐藏其他应用的通知。</string>
+    <!-- 界面优化 -->
+    <string name="action_expand">展开</string>
+    <string name="action_collapse">收起</string>
+    <string name="message_in_conversation">来自 %1$s</string>
+    <string name="message_action_memo">存为备忘</string>
+    <string name="message_action_handle">已处理</string>
+    <string name="message_action_unhandle">未处理</string>
+    <string name="rule_alert_summary_default">默认提醒</string>
+    <string name="rule_alert_summary_silent">静默</string>
+    <string name="rule_alert_summary_quiet">勿扰时段也提醒</string>
+    <string name="rule_section_match">匹配哪些消息</string>
+    <string name="settings_section_background">后台运行</string>
+    <string name="settings_recent_title">最近读取（%1$d）</string>
+    <string name="accent_rose">玫瑰红</string>
+    <string name="accent_coral">珊瑚橙</string>
+    <string name="accent_amber">琥珀金</string>
+    <string name="accent_green">青绿</string>
+    <string name="accent_teal">湖蓝</string>
+    <string name="accent_blue">海蓝</string>
+    <string name="accent_violet">紫罗兰</string>
+    <string name="accent_orchid">兰花紫</string>
+    <string name="accent_wallpaper">壁纸取色</string>
+    <!-- 外观 -->
+    <string name="settings_section_appearance">外观</string>
+    <string name="appearance_accent">主题色</string>
+    <string name="appearance_accent_selected">%1$s · 应用于整个应用</string>
+    <string name="appearance_accent_wallpaper_hint">%1$s · 颜色跟随手机壁纸</string>
+
+    <!-- 灵感与待办 -->
+    <string name="memo_tab_ideas">灵感</string>
+    <string name="memo_tab_todos">待办</string>
+    <string name="memo_tab_idea_single">灵感</string>
+    <string name="memo_tab_todo_single">待办</string>
+    <string name="memo_new_idea">新建灵感</string>
+    <string name="memo_new_todo">新建待办</string>
+    <string name="memo_ideas_empty_title">还没有灵感</string>
+    <string name="memo_ideas_empty_body">在上方输入框记下一个想法，它会作为笔记留在这里。</string>
+    <string name="memo_todos_empty_title">没有待办事项</string>
+    <string name="memo_todos_empty_body">在上方添加待办，完成后打个勾。</string>
+    <string name="memo_todos_all_done">全部完成，干得漂亮。</string>
+    <string name="memo_todos_done_header">已完成 · %1$d</string>
+    <string name="memo_mark_done">标为完成</string>
+    <string name="memo_mark_not_done">标为未完成</string>
+    <string name="memo_todo_title_hint">要做什么？</string>
+    <string name="memo_todo_body_hint">补充细节（可选）</string>
+    <!-- 规则管理 -->
+    <string name="action_done">完成</string>
+    <string name="action_more">更多选项</string>
+    <plurals name="rules_active_count">
+        <item quantity="other">%d 条规则生效中</item>
+    </plurals>
+    <plurals name="rules_paused_count">
+        <item quantity="other">%d 条已暂停</item>
+    </plurals>
+    <string name="rule_group_several_apps">多个应用</string>
+    <string name="rule_group_any_app">任意应用</string>
+    <string name="rule_clause_apps">在 %1$s</string>
+    <string name="rule_clause_from">来自 %1$s</string>
+    <string name="rule_clause_mentions">包含 %1$s</string>
+    <string name="rule_clause_everything">所有消息</string>
+    <string name="rule_no_conditions">没有条件，不会为任何消息加星标</string>
+    <string name="rule_no_conditions_warning">此规则没有设置应用、发送者或关键词，不会为任何消息加星标。请在下方至少添加一项。</string>
+    <plurals name="rule_stats_starred">
+        <item quantity="other">已加星标 %d 条</item>
+    </plurals>
+    <string name="rule_stats_none">尚无匹配</string>
+    <string name="rule_status_active">生效中</string>
+    <string name="rule_status_paused">已暂停</string>
+    <string name="rule_stat_starred">已加星标消息</string>
+    <string name="rule_stat_last">最近一次</string>
+    <string name="rule_any_app">任意应用</string>
+    <string name="rule_anyone">任何人</string>
+    <string name="rule_any_content">任意内容</string>
+    <string name="rule_no_tag">无</string>
+    <string name="rule_and_or_hint">已设置的条件需全部满足；同一条件中满足任意一项即可。</string>
+    <string name="rule_recent_matches">最近加星标的消息</string>
+    <string name="rule_recent_matches_empty">此规则还没有为任何消息加星标。</string>
+    <string name="rule_rename">重命名</string>
+    <string name="rule_duplicate">复制规则</string>
+    <string name="rule_copy_suffix">"（副本）"</string>
+    <string name="rule_suggestions_recent">最近出现</string>
+
+    <!-- 新建规则向导 -->
+    <string name="wizard_step_of">第 %1$d 步，共 %2$d 步</string>
+    <string name="wizard_next">下一步</string>
+    <string name="wizard_skip">跳过</string>
+    <string name="wizard_create">创建规则</string>
+    <string name="wizard_apps_title">要关注哪些应用？</string>
+    <string name="wizard_apps_body">可选择一个或多个。留空表示关注所有应用。</string>
+    <string name="wizard_senders_title">来自谁？</string>
+    <string name="wizard_senders_body">联系人、群名或账号名。留空表示任何人。</string>
+    <string name="wizard_keywords_title">包含哪些词？</string>
+    <string name="wizard_keywords_body">消息需包含其中任一词。留空表示任意内容。</string>
+    <string name="wizard_alert_title">如何提醒你？</string>
+    <string name="wizard_alert_body">之后可随时在规则页面修改。</string>
+    <string name="wizard_alert_custom">自定义提醒</string>
+    <string name="wizard_alert_custom_desc">为此规则单独设置声音、振动和横幅</string>
+    <string name="wizard_review_title">命名并确认</string>
+    <string name="wizard_review_body">看看这条规则会做什么，以及它本会捕获哪些消息。</string>
+    <string name="wizard_summary">概要</string>
+    <string name="appearance_theme">主题</string>
+    <string name="theme_system">跟随系统</string>
+    <string name="theme_light">浅色</string>
+    <string name="theme_dark">深色</string>
+    <!-- 提醒检查 -->
+    <string name="alert_channel_group">星标提醒</string>
+    <string name="alert_health_ok">声音、振动和横幅均已开启，提醒将按下方设置工作。</string>
+    <string name="alert_health_silent_profile">提醒设为静默，星标消息只会被收集。</string>
+    <string name="alert_health_title_problem">Tuck 提醒可能不会响</string>
+    <string name="alert_problem_notifications_off">Tuck 的通知已被关闭。</string>
+    <string name="alert_problem_channel_blocked">“星标提醒”通知类别已被关闭。</string>
+    <string name="alert_problem_banner_off">Tuck 的横幅（屏幕顶部弹出）已关闭。</string>
+    <string name="alert_problem_sound_off">Tuck 提醒的声音已关闭。</string>
+    <string name="alert_problem_vibration_off">Tuck 提醒的振动已关闭。</string>
+    <string name="alert_problem_dnd">勿扰模式已开启，提醒可能不会响。</string>
+    <string name="alert_problem_silent">手机处于静音模式。</string>
+    <string name="alert_problem_vibrate_only">手机处于振动模式，提醒不会发出声音。</string>
+    <string name="alert_problem_volume_zero">通知音量为 0。</string>
+    <string name="alert_fix_in_settings">去设置开启</string>
+    <string name="alert_open_sound_settings">声音设置</string>
+    <string name="alert_no_sound_picker">此手机没有铃声选择器，Tuck 将使用默认提示音。</string>
+    <string name="alert_open_dnd_settings">勿扰模式</string>
+    <string name="alert_reset_channel">重置提醒</string>
+    <string name="alert_reset_hint">如果开关总被自动关闭，“重置提醒”会重新创建一个开启声音、振动和横幅的提醒类别。</string>
+    <string name="alert_oem_hint_xiaomi">小米手机还需为 Tuck 开启“悬浮通知”“锁屏通知”“响铃”和“振动”。</string>
+    <string name="alert_oem_hint_huawei">华为/荣耀手机请在 Tuck 的通知设置中允许“横幅”“铃声”和“振动”。</string>
+    <string name="alert_oem_hint_oppo">OPPO/一加/realme 手机请为 Tuck 开启“横幅通知”“铃声”和“振动”。</string>
+    <string name="alert_oem_hint_vivo">vivo/iQOO 手机请为 Tuck 开启“悬浮通知”“声音”和“振动”。</string>
+    <string name="alert_oem_hint_meizu">魅族手机请为 Tuck 开启“悬浮通知”和“声音”。</string>
+    <string name="alert_test_sent">已发送测试提醒</string>
+    <string name="alert_test_sent_problems">已发送测试提醒，但可能不会响，请查看上方提示。</string>
+    <string name="perm_post_desc_muted">通知已允许，但声音或横幅已关闭。点“去设置”开启。</string>
+    <string name="inbox_alerts_muted">Tuck 提醒在此手机上被静音。</string>
+    <string name="onboarding_alert_check">检查提醒</string>
+    <!-- 避免重复提醒 -->
+    <string name="double_title">避免重复提醒</string>
+    <string name="double_intro">星标消息在原应用中也会响铃。若只想听到 Tuck 的提醒，请把该应用的通知设为“静默”。</string>
+    <string name="double_any_app">此规则关注所有应用。添加具体应用后，可在这里直接打开它的通知设置。</string>
+    <string name="double_not_off">请选择“静默”，不要选“关闭”。关闭通知或在应用内设置消息免打扰后，Tuck 将看不到这些消息。</string>
+    <string name="double_status_loud">仍会自己响铃，星标消息会提醒两次</string>
+    <string name="double_status_quiet">已静默，只有 Tuck 会提醒你</string>
+    <string name="double_status_unknown">还未看到来自 %1$s 的通知</string>
+    <string name="double_make_quiet">设为静默</string>
+    <string name="double_settings">设置</string>
+    <string name="double_tidy_title">收起原通知</string>
+    <string name="double_tidy_desc">Tuck 提醒后，自动清除原应用的那条通知，避免重复显示。原通知上的回复按钮也会一并消失。</string>
+    <string name="rule_alert_summary_tidy">收起原通知</string>
+</resources>

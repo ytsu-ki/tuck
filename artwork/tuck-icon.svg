@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="18 18 72 72">
+  <!-- Same geometry as app/src/main/res/drawable/ic_launcher_foreground.xml (Tuck icon), shown at the
+       adaptive icon's visible 72dp area. Full-bleed square for the Play Store (it adds its own mask). -->
+  <rect x="18" y="18" width="72" height="72" fill="#FCE4E9"/>
+  <g transform="translate(2.5 3.5) rotate(-8 54 54)">
+    <path d="M43,31 h22 a8,8 0 0 1 8,8 v30 a8,8 0 0 1 -8,8 h-22 a8,8 0 0 1 -8,-8 v-30 a8,8 0 0 1 8,-8 z" fill="#F6C6D0"/>
+  </g>
+  <g transform="rotate(-8 54 54)">
+    <path d="M43,31 h22 a8,8 0 0 1 8,8 v30 a8,8 0 0 1 -8,8 h-22 a8,8 0 0 1 -8,-8 v-30 a8,8 0 0 1 8,-8 z" fill="#FFFFFF"/>
+    <path d="M47.50,37.00 L49.44,41.33 L54.16,41.84 L50.64,45.02 L51.61,49.66 L47.50,47.30 L43.39,49.66 L44.36,45.02 L40.84,41.84 L45.56,41.33 Z" fill="#E0335F" stroke="#E0335F" stroke-width="2.4" stroke-linejoin="round"/>
+    <path d="M43,58 H65 M43,65 H57" fill="none" stroke="#F4C3CD" stroke-width="3.2" stroke-linecap="round"/>
+  </g>
+</svg>

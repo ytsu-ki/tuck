@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Tuck</string>
+    <string name="listener_service_label">Tuck notification reader</string>
+
+    <!-- Tabs -->
+    <string name="tab_inbox">Inbox</string>
+    <string name="tab_memos">Memos</string>
+    <string name="tab_rules">Rules</string>
+    <string name="tab_settings">Settings</string>
+
+    <!-- Common actions -->
+    <string name="action_fix">Fix</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_reconnect">Reconnect</string>
+    <string name="action_try_again">Try again</string>
+    <string name="action_open_notification_access">Open Notification access</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Welcome to Tuck</string>
+    <string name="onboarding_subtitle">Pick the messages that matter. Tuck collects them in one quiet inbox and makes sure you notice them.</string>
+    <string name="onboarding_promise_untouched">Your apps keep notifying you as usual. Tuck only reads a copy and never blocks or hides anything unless you ask it to.</string>
+    <string name="onboarding_promise_local">Everything stays on this phone. Tuck has no internet access.</string>
+    <string name="onboarding_setup">Set up</string>
+    <string name="onboarding_start">Get started</string>
+    <string name="onboarding_skip">Skip for now</string>
+
+    <!-- Permissions -->
+    <string name="perm_required">Required</string>
+    <string name="perm_grant">Allow</string>
+    <string name="perm_granted">Allowed</string>
+    <string name="perm_access_title">Notification access</string>
+    <string name="perm_access_desc">Lets Tuck read incoming notifications so your rules can pick out the important ones.</string>
+    <string name="perm_access_restricted_hint">Switch greyed out? Open App info, tap ⋮ in the top corner, choose \"Allow restricted settings\", then try again.</string>
+    <string name="perm_open_app_info">Open App info</string>
+    <string name="perm_post_title">Tuck alerts</string>
+    <string name="perm_post_desc">Needed for the extra sound, vibration or banner when a starred message arrives.</string>
+    <string name="perm_battery_title">Run in background</string>
+    <string name="perm_battery_desc">Stops battery saving from shutting Tuck down, so no starred message is missed.</string>
+
+    <!-- Inbox -->
+    <string name="inbox_empty_title">No starred messages yet</string>
+    <string name="inbox_empty_body">Add a rule in the Rules tab. Messages that match will collect here.</string>
+    <string name="inbox_access_missing">Tuck can\'t read notifications yet.</string>
+    <string name="inbox_reader_stopped">Tuck\'s notification reader isn\'t running, so new messages aren\'t being collected.</string>
+
+    <!-- Memos -->
+
+    <!-- Rules -->
+    <string name="rules_empty_title">No rules yet</string>
+    <string name="rules_empty_body">Tap New rule to star messages from a WeChat contact, an X account, a keyword and more.</string>
+
+    <!-- Settings -->
+    <string name="settings_section_permissions">Permissions</string>
+    <string name="settings_section_listener">Notification reader</string>
+    <string name="listener_connected">Connected and reading notifications</string>
+    <string name="listener_waiting">Access allowed, waiting for Android to connect</string>
+    <string name="listener_no_access">Not connected: notification access is off</string>
+    <string name="listener_reconnecting">Reconnecting… This can take up to 15 seconds.</string>
+    <string name="listener_reconnected">Notification reader reconnected</string>
+    <string name="listener_last_error">Last notification Tuck couldn\'t read and skipped (%1$s): %2$s</string>
+    <string name="listener_reconnect_failed_title">Android didn\'t restart the reader</string>
+    <string name="listener_reconnect_failed_body">Open Notification access, turn Tuck off, then turn it back on. That makes Android start the reader again.</string>
+    <string name="listener_reconnect_failed_background">If it keeps stopping, your phone is probably closing Tuck in the background. See Keep running above.</string>
+    <string name="settings_recent_hint">What Tuck can read from your notifications. Kept in memory only and cleared when the app restarts.</string>
+    <string name="settings_recent_empty">Nothing yet. New notifications will show up here.</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_back">Back</string>
+    <string name="action_add">Add</string>
+    <string name="action_remove">Remove</string>
+    <string name="list_separator">", "</string>
+
+    <!-- Rule editor -->
+    <string name="rule_new">New rule</string>
+    <string name="rule_default_name">Starred</string>
+    <string name="rule_name_label">Name</string>
+    <string name="rule_apps_label">From apps</string>
+    <string name="rule_senders_label">Sender, group or account</string>
+    <string name="rule_senders_placeholder">Type a name, then Enter</string>
+    <string name="rule_senders_hint">Matches when the sender, group or account name contains any of these. Leave empty for anyone.</string>
+    <string name="rule_keywords_label">Keywords</string>
+    <string name="rule_keywords_placeholder">Type a keyword, then Enter</string>
+    <string name="rule_keywords_hint">Matches when any keyword appears anywhere in the notification. Leave empty for any content.</string>
+    <string name="rule_tag_label">Tag (optional)</string>
+    <string name="rule_tag_placeholder">e.g. Work</string>
+    <string name="rule_needs_condition">Add at least one app, sender or keyword.</string>
+    <string name="rule_preview_title">Preview</string>
+    <string name="rule_preview_no_recent">Nothing seen yet. New notifications are checked against this rule as they arrive.</string>
+    <plurals name="rule_preview_summary">
+        <item quantity="one">%1$d of the last %2$d notifications matches.</item>
+        <item quantity="other">%1$d of the last %2$d notifications match.</item>
+    </plurals>
+    <string name="rule_delete_title">Delete this rule?</string>
+    <string name="rule_delete_body">Messages it has already starred stay in the inbox.</string>
+
+    <!-- App picker -->
+    <string name="app_picker_title">Choose apps</string>
+    <string name="app_picker_search">Search apps</string>
+    <string name="app_picker_messaging">Messaging &amp; social</string>
+    <string name="app_picker_other">Other apps</string>
+    <!-- Alerts -->
+    <string name="alert_sound">Sound</string>
+    <string name="alert_vibrate">Vibrate</string>
+    <string name="alert_banner">Banner</string>
+    <string name="alert_banner_desc">Pops up at the top of the screen</string>
+    <string name="alert_silent_desc">Silent: matching messages are only collected in the inbox.</string>
+    <string name="alert_choose_sound">Choose sound</string>
+    <string name="alert_default_sound">Default notification sound</string>
+    <string name="alert_send_test">Send test alert</string>
+    <string name="alert_test_sender">Tuck test</string>
+    <string name="alert_test_text">This is how a starred message will alert you.</string>
+    <string name="alert_action_handled">Mark handled</string>
+    <string name="alert_action_open_in">Open %1$s</string>
+    <string name="alert_channel_name">Starred alerts: %1$s</string>
+    <string name="alert_channel_description">Extra alerts for messages that match your rules.</string>
+    <string name="rule_alert_label">Alert</string>
+    <string name="rule_alert_use_default">Use default alert</string>
+    <string name="rule_alert_use_default_desc">Set the default in Settings</string>
+    <string name="settings_section_alert">Default alert</string>
+    <string name="settings_alert_hint">Used by every rule that doesn\'t set its own alert. Your original app notifications are not affected.</string>
+
+    <!-- Inbox -->
+    <string name="inbox_mark_all_read">Mark all as read</string>
+    <string name="inbox_view_active">To handle</string>
+    <string name="inbox_view_all">All</string>
+    <string name="inbox_mark_handled">Mark handled</string>
+    <string name="inbox_mark_unhandled">Mark not handled</string>
+    <string name="inbox_filtered_empty_title">All caught up</string>
+    <string name="inbox_filtered_empty_body">Nothing matches these filters. Choose All to see handled messages too.</string>
+    <string name="day_today">Today</string>
+    <string name="day_yesterday">Yesterday</string>
+    <string name="message_open_in">Open in %1$s</string>
+    <string name="message_open_failed">Couldn\'t open the app.</string>
+    <string name="message_copy">Copy</string>
+    <string name="message_copied">Copied</string>
+    <string name="message_delete_title">Delete this message?</string>
+    <string name="message_delete_body">It is removed from Tuck only. The original stays in its app.</string>
+
+    <!-- Memos -->
+    <string name="memo_quick_hint">Jot down an idea…</string>
+    <string name="memo_quick_todo_hint">Add a to-do…</string>
+    <string name="memo_pinned">Pinned</string>
+    <string name="memo_pin">Pin</string>
+    <string name="memo_unpin">Unpin</string>
+    <string name="memo_title_hint">Title</string>
+    <string name="memo_body_hint">Write your idea…</string>
+    <string name="memo_tags_label">Tags</string>
+    <string name="memo_delete_title">Delete this memo?</string>
+    <string name="memo_from_message">From a message by %1$s</string>
+    <string name="memo_quote_format">“%1$s”\n— %2$s (%3$s)\n\n</string>
+    <!-- Phase 6: quiet hours, retention, background guidance, about -->
+    <string name="action_ok">OK</string>
+    <string name="settings_section_quiet">Quiet hours</string>
+    <string name="quiet_enabled">Quiet hours</string>
+    <string name="quiet_desc">Tuck alerts stay silent during this time. Messages are still collected.</string>
+    <string name="quiet_start">Starts</string>
+    <string name="quiet_end">Ends</string>
+    <string name="quiet_bypass_hint">Rules set to \"Alert during quiet hours\" still alert.</string>
+    <string name="rule_bypass_quiet">Alert during quiet hours</string>
+    <string name="rule_bypass_quiet_desc">For messages that can\'t wait until morning</string>
+
+    <string name="settings_section_retention">Keep inbox messages for</string>
+    <plurals name="retention_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <string name="retention_one_year">1 year</string>
+    <string name="retention_forever">Forever</string>
+    <string name="retention_hint">Older messages are deleted automatically. Memos are always kept, so save anything important as a memo.</string>
+    <string name="retention_hint_forever">Messages are never deleted automatically.</string>
+
+    <string name="oem_title">Keep Tuck running on %1$s</string>
+    <string name="oem_lock_recents">Also lock Tuck in the recent-apps screen so one-tap cleaning doesn\'t close it. Menu names vary between system versions.</string>
+    <string name="oem_open_settings">Open these settings</string>
+    <string name="oem_name_xiaomi">Xiaomi / Redmi</string>
+    <string name="oem_name_huawei">Huawei</string>
+    <string name="oem_name_honor">Honor</string>
+    <string name="oem_name_oppo">OPPO / realme</string>
+    <string name="oem_name_oneplus">OnePlus</string>
+    <string name="oem_name_vivo">vivo / iQOO</string>
+    <string name="oem_name_samsung">Samsung</string>
+    <string name="oem_name_meizu">Meizu</string>
+    <string name="oem_name_other">your phone</string>
+    <string name="oem_steps_xiaomi">1. Security → Permissions → Autostart: turn on Tuck.\n2. Settings → Apps → Tuck → Battery saver: No restrictions.</string>
+    <string name="oem_steps_huawei">Settings → Battery → App launch → Tuck: switch to Manage manually and turn on Auto-launch, Secondary launch and Run in background.</string>
+    <string name="oem_steps_oppo">Settings → Battery → App battery management → Tuck: turn on Allow background activity and Allow auto launch.</string>
+    <string name="oem_steps_vivo">1. i Manager → App manager → Autostart: turn on Tuck.\n2. Settings → Battery → Background power consumption → Tuck: Allow.</string>
+    <string name="oem_steps_samsung">Settings → Battery → Background usage limits → Never sleeping apps: add Tuck.</string>
+    <string name="oem_steps_meizu">Phone Manager → Permissions → Background management → Tuck: Allow running in background.</string>
+    <string name="oem_steps_other">If starred messages stop arriving, look in your phone\'s battery settings for Tuck and allow it to run in the background.</string>
+
+    <string name="settings_section_about">About</string>
+    <string name="about_version">Tuck %1$s</string>
+    <string name="about_privacy">Tuck has no internet permission. Everything it reads stays on this phone and is excluded from cloud backups. It never blocks or hides other apps\' notifications, except originals you choose to tidy up per rule.</string>
+    <!-- UI polish -->
+    <string name="action_expand">Expand</string>
+    <string name="action_collapse">Collapse</string>
+    <string name="message_in_conversation">in %1$s</string>
+    <string name="message_action_memo">Memo</string>
+    <string name="message_action_handle">Handled</string>
+    <string name="message_action_unhandle">Not handled</string>
+    <string name="rule_alert_summary_default">Default alert</string>
+    <string name="rule_alert_summary_silent">Silent</string>
+    <string name="rule_alert_summary_quiet">Alerts in quiet hours</string>
+    <string name="rule_section_match">Which messages</string>
+    <string name="settings_section_background">Keep running</string>
+    <string name="settings_recent_title">Recently seen (%1$d)</string>
+    <string name="accent_rose">Rose</string>
+    <string name="accent_coral">Coral</string>
+    <string name="accent_amber">Amber</string>
+    <string name="accent_green">Green</string>
+    <string name="accent_teal">Teal</string>
+    <string name="accent_blue">Blue</string>
+    <string name="accent_violet">Violet</string>
+    <string name="accent_orchid">Orchid</string>
+    <string name="accent_wallpaper">Wallpaper</string>
+    <!-- Appearance -->
+    <string name="settings_section_appearance">Appearance</string>
+    <string name="appearance_accent">Accent color</string>
+    <string name="appearance_accent_selected">%1$s · used across the whole app</string>
+    <string name="appearance_accent_wallpaper_hint">%1$s · colors follow your phone\'s wallpaper</string>
+
+    <!-- Ideas and to-dos -->
+    <string name="memo_tab_ideas">Ideas</string>
+    <string name="memo_tab_todos">To-dos</string>
+    <string name="memo_tab_idea_single">Idea</string>
+    <string name="memo_tab_todo_single">To-do</string>
+    <string name="memo_new_idea">New idea</string>
+    <string name="memo_new_todo">New to-do</string>
+    <string name="memo_ideas_empty_title">No ideas yet</string>
+    <string name="memo_ideas_empty_body">Type a thought in the box above. Ideas stay here as notes until you need them.</string>
+    <string name="memo_todos_empty_title">Nothing to do</string>
+    <string name="memo_todos_empty_body">Add a to-do above and tick it off when it\'s done.</string>
+    <string name="memo_todos_all_done">All done. Nice work.</string>
+    <string name="memo_todos_done_header">Completed · %1$d</string>
+    <string name="memo_mark_done">Mark done</string>
+    <string name="memo_mark_not_done">Mark not done</string>
+    <string name="memo_todo_title_hint">What needs doing?</string>
+    <string name="memo_todo_body_hint">Add details (optional)</string>
+    <!-- Rule management -->
+    <string name="action_done">Done</string>
+    <string name="action_more">More options</string>
+    <plurals name="rules_active_count">
+        <item quantity="one">%d active rule</item>
+        <item quantity="other">%d active rules</item>
+    </plurals>
+    <plurals name="rules_paused_count">
+        <item quantity="one">%d paused</item>
+        <item quantity="other">%d paused</item>
+    </plurals>
+    <string name="rule_group_several_apps">Several apps</string>
+    <string name="rule_group_any_app">Any app</string>
+    <string name="rule_clause_apps">In %1$s</string>
+    <string name="rule_clause_from">From %1$s</string>
+    <string name="rule_clause_mentions">Mentions %1$s</string>
+    <string name="rule_clause_everything">Every message</string>
+    <string name="rule_no_conditions">No conditions, so it won\'t star anything</string>
+    <string name="rule_no_conditions_warning">This rule has no app, sender or keyword, so it won\'t star anything. Add at least one below.</string>
+    <plurals name="rule_stats_starred">
+        <item quantity="one">%d starred</item>
+        <item quantity="other">%d starred</item>
+    </plurals>
+    <string name="rule_stats_none">No matches yet</string>
+    <string name="rule_status_active">Active</string>
+    <string name="rule_status_paused">Paused</string>
+    <string name="rule_stat_starred">Messages starred</string>
+    <string name="rule_stat_last">Last starred</string>
+    <string name="rule_any_app">Any app</string>
+    <string name="rule_anyone">Anyone</string>
+    <string name="rule_any_content">Any content</string>
+    <string name="rule_no_tag">None</string>
+    <string name="rule_and_or_hint">Every condition you set must match; within one, any value is enough.</string>
+    <string name="rule_recent_matches">Recently starred</string>
+    <string name="rule_recent_matches_empty">Nothing starred by this rule yet.</string>
+    <string name="rule_rename">Rename</string>
+    <string name="rule_duplicate">Duplicate</string>
+    <string name="rule_copy_suffix">" (copy)"</string>
+    <string name="rule_suggestions_recent">Seen recently</string>
+
+    <!-- New-rule wizard -->
+    <string name="wizard_step_of">Step %1$d of %2$d</string>
+    <string name="wizard_next">Next</string>
+    <string name="wizard_skip">Skip</string>
+    <string name="wizard_create">Create rule</string>
+    <string name="wizard_apps_title">Which apps should it watch?</string>
+    <string name="wizard_apps_body">Pick one or more. Leave empty to watch every app.</string>
+    <string name="wizard_senders_title">From whom?</string>
+    <string name="wizard_senders_body">A contact, group or account name. Leave empty for anyone.</string>
+    <string name="wizard_keywords_title">Containing which words?</string>
+    <string name="wizard_keywords_body">The message must mention one of these. Leave empty for any content.</string>
+    <string name="wizard_alert_title">How should it alert you?</string>
+    <string name="wizard_alert_body">You can change this any time on the rule\'s page.</string>
+    <string name="wizard_alert_custom">Custom alert</string>
+    <string name="wizard_alert_custom_desc">Choose sound, vibration and banner for this rule</string>
+    <string name="wizard_review_title">Name it and check it</string>
+    <string name="wizard_review_body">Here\'s what the rule will do and what it would have caught.</string>
+    <string name="wizard_summary">Summary</string>
+    <string name="appearance_theme">Theme</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <!-- Alert checks -->
+    <string name="alert_channel_group">Starred alerts</string>
+    <string name="alert_health_ok">Sound, vibration and banners are on. Alerts will work as set below.</string>
+    <string name="alert_health_silent_profile">Alerts are set to silent, so starred messages are only collected.</string>
+    <string name="alert_health_title_problem">Tuck alerts may stay silent</string>
+    <string name="alert_problem_notifications_off">Notifications for Tuck are turned off.</string>
+    <string name="alert_problem_channel_blocked">The “Starred alerts” category is turned off.</string>
+    <string name="alert_problem_banner_off">Banners (pop-up on screen) are off for Tuck.</string>
+    <string name="alert_problem_sound_off">Sound is off for Tuck alerts.</string>
+    <string name="alert_problem_vibration_off">Vibration is off for Tuck alerts.</string>
+    <string name="alert_problem_dnd">Do Not Disturb is on, so alerts may not ring.</string>
+    <string name="alert_problem_silent">Your phone is on silent.</string>
+    <string name="alert_problem_vibrate_only">Your phone is on vibrate, so alerts won\'t make a sound.</string>
+    <string name="alert_problem_volume_zero">Notification volume is at 0.</string>
+    <string name="alert_fix_in_settings">Turn on in settings</string>
+    <string name="alert_open_sound_settings">Sound settings</string>
+    <string name="alert_no_sound_picker">This phone has no sound picker. Tuck will use the default sound.</string>
+    <string name="alert_open_dnd_settings">Do Not Disturb</string>
+    <string name="alert_reset_channel">Reset alerts</string>
+    <string name="alert_reset_hint">If a switch keeps turning itself off, Reset alerts creates a fresh alert category with sound, vibration and banners on.</string>
+    <string name="alert_oem_hint_xiaomi">On Xiaomi, also turn on Floating notifications, Lock screen notifications, Sound and Vibrate for Tuck.</string>
+    <string name="alert_oem_hint_huawei">On Huawei and Honor, allow Banners, Ring and Vibrate in Tuck\'s notification settings.</string>
+    <string name="alert_oem_hint_oppo">On OPPO, OnePlus and realme, turn on Banner notifications, Ringtone and Vibrate for Tuck.</string>
+    <string name="alert_oem_hint_vivo">On vivo and iQOO, turn on Floating notifications, Sound and Vibrate for Tuck.</string>
+    <string name="alert_oem_hint_meizu">On Meizu, turn on Floating notifications and Sound for Tuck.</string>
+    <string name="alert_test_sent">Test alert sent</string>
+    <string name="alert_test_sent_problems">Test alert sent, but it may be silent. See the checks above.</string>
+    <string name="perm_post_desc_muted">Notifications are allowed, but sound or banners are off. Tap Fix to turn them on.</string>
+    <string name="inbox_alerts_muted">Tuck alerts are muted on this phone.</string>
+    <string name="onboarding_alert_check">Check your alerts</string>
+    <!-- Avoid double alerts -->
+    <string name="double_title">Avoid double alerts</string>
+    <string name="double_intro">Starred messages also ring in the original app. To hear only Tuck, set that app\'s notifications to Silent.</string>
+    <string name="double_any_app">This rule watches every app. Add specific apps to get a shortcut to their settings here.</string>
+    <string name="double_not_off">Choose Silent, not Off. Turning notifications off, or muting a chat inside the app, stops Tuck from seeing those messages.</string>
+    <string name="double_status_loud">Still rings on its own, so you hear starred messages twice</string>
+    <string name="double_status_quiet">Silent. Only Tuck will alert you</string>
+    <string name="double_status_unknown">No notification from %1$s seen yet</string>
+    <string name="double_make_quiet">Make quiet</string>
+    <string name="double_settings">Settings</string>
+    <string name="double_tidy_title">Tidy up the original</string>
+    <string name="double_tidy_desc">After Tuck alerts, dismiss the app\'s own notification so it isn\'t shown twice. Its reply buttons go with it.</string>
+    <string name="rule_alert_summary_tidy">Tidies original</string>
+</resources>
